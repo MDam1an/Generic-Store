@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finalizar compra — MONO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;1,400&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER (simplificado) ===================== -->
+<header class="site-header is-solid">
+  <div class="wrap header-inner">
+    <div class="header-side left"></div>
+    <a href="index.html" class="logo">MONO</a>
+    <div class="header-side right">
+      <a href="index.html" class="icon-btn" aria-label="Voltar à loja" data-icon="close"></a>
+    </div>
+  </div>
+</header>
+
+<main class="checkout-page">
+  <div class="wrap">
+    <h1 class="checkout-title">Finalizar compra</h1>
+
+    <div id="checkout-root"></div>
+  </div>
+</main>
+
+<script src="js/icons.js"></script>
+<script src="js/products-data.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+<script>
+  document.querySelectorAll("[data-icon]").forEach((el) => { el.innerHTML = ICONS[el.dataset.icon] || ""; });
+</script>
+</body>
+</html>
